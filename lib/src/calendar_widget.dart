@@ -294,7 +294,7 @@ class CustomCalendarViewer extends StatefulWidget {
     this.headerAlignment = MainAxisAlignment.spaceBetween,
     this.showHeader = true,
     this.dropArrowSize = 34,
-    this.movingArrowSize = 16,
+    this.movingArrowSize = 14,//update 16
     this.spaceBetweenMovingArrow = 48,
     this.closeDateBefore,
     this.closedDatesColor = Colors.grey,
@@ -313,9 +313,9 @@ class CustomCalendarViewer extends StatefulWidget {
       color: Colors.white,
     ),
     this.headerMargin =
-        const EdgeInsets.only(left: 42, right: 42, top: 8, bottom: 10),
+        const EdgeInsets.only(left: 15, right: 15, top: 0, bottom: 3), //update
     this.daysMargin =
-        const EdgeInsets.only(left: 45, right: 45, top: 0, bottom: 0),
+        const EdgeInsets.only(left: 22, right: 22, top: 0, bottom: 3), //update
     this.iconAlignment = Alignment.topLeft,
     this.iconPadding = EdgeInsets.zero,
     this.calendarBorderColor = Colors.grey,
@@ -2157,3 +2157,4 @@ class _CustomCalendarViewerState extends State<CustomCalendarViewer>
     );
   }
 }
+
